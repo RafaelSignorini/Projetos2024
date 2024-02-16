@@ -1,6 +1,9 @@
+print("Preencha abaixo as informações da sua primeira média")
 AVAparcial1 = float(input("Nota da AVA parcial: "))
 AVAfinal1 = float(input("Nota da AVA final: "))
 AC1 = float(input("Nota da AC: "))
+
+print("Agora as informações da sua produtividade")
 
 desempenho1 = float(input("Nota do desempenho: "))
 participacao1 = float(input("Nota da participação: "))
@@ -16,9 +19,14 @@ Prod01 = Produtividade1 * 0.2
 
 M1 = (AVAp01 + AVAf01 + AC01 + Prod01)
 
+print(f"Sua primeira média é de {M1} pontos")
+print("Preencha abaixo as informações da sua segunda média")
+
 AVAparcial2 = float(input("Nota da AVA parcial: "))
 AVAfinal2 = float(input("Nota da AVA final: "))
 AC2 = float(input("Nota da AC: "))
+
+print("Agora as informações da sua produtividade")
 
 desempenho2 = float(input("Nota do desempenho: "))
 participacao2 = float(input("Nota da participação: "))
@@ -34,7 +42,7 @@ Prod02 = Produtividade2 * 0.2
 
 M2 = (AVAp02 + AVAf02 + AC02 + Prod02)
 
-EF = float(input("Nota do exame final: "))
+print(f"Sua segunda média é de {M2} pontos")
 
 if (M1 + M2) >= 14:
     MF = ((M1 + M2) * 2) / 3
@@ -44,8 +52,11 @@ if (M1 + M2) >= 14:
         print("Burro pra caralho, num passa nem fodendo KKKKKKKKKKKKKKKK")
 elif (M1 + M2) < 14:
     print("Vai ter que fazer exame, burrão")
+    EF = float(input("Nota do exame final: "))
     MF = ((M1 + M2) + EF * 2) / 4
     if MF >= 7:
         print("Só o básico também")
     elif MF < 7:
         print("Tinha que ser um protótipo de henry")
+
+print(f"Sua média total é de {MF} pontos")

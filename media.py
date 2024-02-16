@@ -34,4 +34,18 @@ Prod02 = Produtividade2 * 0.2
 
 M2 = (AVAp02 + AVAf02 + AC02 + Prod02)
 
-MF = ((M1 + M2) + EF *2) / 4
+EF = float(input("Nota do exame final: "))
+
+if (M1 + M2) >= 14:
+    MF = ((M1 + M2) * 2) / 3
+    if MF >= 7:
+        print("Você passou, meu mano <3")
+    elif MF < 7:
+        print("Burro pra caralho, num passa nem fodendo KKKKKKKKKKKKKKKK")
+elif (M1 + M2) < 14:
+    print("Vai ter que fazer exame, burrão")
+    MF = ((M1 + M2) + EF * 2) / 4
+    if MF >= 7:
+        print("Só o básico também")
+    elif MF < 7:
+        print("Tinha que ser um protótipo de henry")

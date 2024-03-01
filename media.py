@@ -43,20 +43,80 @@ Prod02 = Produtividade2 * 0.2
 M2 = (AVAp02 + AVAf02 + AC02 + Prod02)
 
 print(f"Sua segunda média é de {M2} pontos")
+print("Preencha abaixo as informações da sua terceira média")
+AVAparcial3 = float(input("Nota da AVA parcial: "))
+AVAfinal3 = float(input("Nota da AVA final: "))
+AC3 = float(input("Nota da AC: "))
+
+print("Agora as informações da sua produtividade")
+
+desempenho3 = float(input("Nota do desempenho: "))
+participacao3 = float(input("Nota da participação: "))
+caderno3 = float(input("Nota das anotações do caderno: "))
+autoavaliacao3 = float(input("Nota da autoavaliação: "))
+
+Produtividade3 = (desempenho3 + participacao3 + caderno3 + autoavaliacao3) / 4
+
+AVAp03 = AVAparcial3 * 0.25
+AVAf03 = AVAfinal3 * 0.25
+AC03 = AC3 * 0.3
+Prod03 = Produtividade3 * 0.2
+
+M3 = (AVAp03 + AVAf03 + AC03 + Prod03)
+
+print(f"Sua terceira média é de {M3} pontos")
+print("Preencha abaixo as informações da sua quarta média")
+AVAparcial4 = float(input("Nota da AVA parcial: "))
+AVAfinal4 = float(input("Nota da AVA final: "))
+AC4 = float(input("Nota da AC: "))
+
+print("Agora as informações da sua produtividade")
+
+desempenho4 = float(input("Nota do desempenho: "))
+participacao4 = float(input("Nota da participação: "))
+caderno4 = float(input("Nota das anotações do caderno: "))
+autoavaliacao4 = float(input("Nota da autoavaliação: "))
+
+Produtividade4 = (desempenho4 + participacao4 + caderno4 + autoavaliacao4) / 4
+
+AVAp04 = AVAparcial4 * 0.25
+AVAf04 = AVAfinal4 * 0.25
+AC04 = AC4 * 0.3
+Prod04 = Produtividade4 * 0.2
+
+M4 = (AVAp04 + AVAf04 + AC04 + Prod04)
+
+print(f"Sua quarta média é de {M4} pontos")
 
 if (M1 + M2) >= 14:
-    MF = ((M1 + M2) * 2) / 3
-    if MF >= 7:
+    MF1 = ((M1 + M2) * 2) / 3
+    if MF1 >= 7:
         print("Você passou, meu mano <3")
-    elif MF < 7:
+    elif MF1 < 7:
         print("Burro pra caralho, num passa nem fodendo KKKKKKKKKKKKKKKK")
-elif (M1 + M2) < 14:
-    print("Vai ter que fazer exame, burrão")
-    EF = float(input("Nota do exame final: "))
-    MF = ((M1 + M2) + EF * 2) / 4
-    if MF >= 7:
+    elif (M1 + M2) < 14:
+        print("Vai ter que fazer exame, burrão")
+    EF1 = float(input("Nota do exame final: "))
+    MF1 = ((M1 + M2) + EF1 * 2) / 4
+    if MF1 >= 7:
         print("Só o básico também")
-    elif MF < 7:
+    elif MF1 < 7:
         print("Tinha que ser um protótipo de henry")
-
+print(f"Sua média total do primeiro semestre foi de {MF1} pontos")
+if (M3 + M4) >= 14:
+    MF2 = ((M3 + M4) * 2) / 3
+    if MF2 >= 7:
+        print("Você passou, meu mano <3")
+    elif MF2 < 7:
+        print("Burro pra caralho, num passa nem fodendo KKKKKKKKKKKKKKKK")
+    elif (M3 + M4) < 14:
+        print("Vai ter que fazer exame, burrão")
+    EF2 = float(input("Nota do exame final: "))
+    MF2 = ((M3 + M4) + EF2 * 2) / 4
+    if MF2 >= 7:
+        print("Só o básico também")
+    elif MF2 < 7:
+        print("Tinha que ser um protótipo de henry")
+print(f"Sua média total do primeiro semestre foi de {MF2} pontos")
+MF = (MF1 + MF2) / 2
 print(f"Sua média total é de {MF} pontos")

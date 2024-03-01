@@ -117,6 +117,7 @@ if (M3 + M4) >= 14:
         print("Só o básico também")
     elif MF2 < 7:
         print("Tinha que ser um protótipo de henry")
-print(f"Sua média total do primeiro semestre foi de {MF2} pontos")
+print(f"Sua média total do primeiro semestre foi de {MF1} pontos")
+print(f"Sua média total do segundo semestre foi de {MF2} pontos")
 MF = (MF1 + MF2) / 2
 print(f"Sua média total é de {MF} pontos")

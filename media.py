@@ -1,11 +1,11 @@
-print("Escolha o bimestre para calcular a nota")
+print("Escolha o bimestre para calcular a nota.")
 
-print("Preencha abaixo as informações da sua primeira média")
+print("Preencha abaixo as informações da sua primeira média.")
 AVAparcial1 = float(input("Nota da AVA parcial: "))
 AVAfinal1 = float(input("Nota da AVA final: "))
 AC1 = float(input("Nota da AC: "))
 
-print("Agora as informações da sua produtividade")
+print("Agora as informações da sua produtividade.")
 
 desempenho1 = float(input("Nota do desempenho: "))
 participacao1 = float(input("Nota da participação: "))
@@ -21,14 +21,14 @@ Prod01 = Produtividade1 * 0.2
 
 M1 = (AVAp01 + AVAf01 + AC01 + Prod01)
 
-print(f"Sua primeira média é de {M1} pontos")
+print(f"Sua primeira média é de {M1} pontos.")
 
-print("Preencha abaixo as informações da sua segunda média")
+print("Preencha abaixo as informações da sua segunda média.")
 AVAparcial2 = float(input("Nota da AVA parcial: "))
 AVAfinal2 = float(input("Nota da AVA final: "))
 AC2 = float(input("Nota da AC: "))
 
-print("Agora as informações da sua produtividade")
+print("Agora as informações da sua produtividade.")
 desempenho2 = float(input("Nota do desempenho: "))
 participacao2 = float(input("Nota da participação: "))
 caderno2 = float(input("Nota das anotações do caderno: "))
@@ -43,14 +43,14 @@ Prod02 = Produtividade2 * 0.2
 
 M2 = (AVAp02 + AVAf02 + AC02 + Prod02)
 
-print(f"Sua segunda média é de {M2} pontos")
+print(f"Sua segunda média é de {M2} pontos.")
 
-print("Preencha abaixo as informações da sua terceira média")
+print("Preencha abaixo as informações da sua terceira média.")
 AVAparcial3 = float(input("Nota da AVA parcial: "))
 AVAfinal3 = float(input("Nota da AVA final: "))
 AC3 = float(input("Nota da AC: "))
 
-print("Agora as informações da sua produtividade")
+print("Agora as informações da sua produtividade.")
 
 desempenho3 = float(input("Nota do desempenho: "))
 participacao3 = float(input("Nota da participação: "))
@@ -66,14 +66,14 @@ Prod03 = Produtividade3 * 0.2
 
 M3 = (AVAp03 + AVAf03 + AC03 + Prod03)
 
-print(f"Sua terceira média é de {M3} pontos")
+print(f"Sua terceira média é de {M3} pontos.")
 
-print("Preencha abaixo as informações da sua quarta média")
+print("Preencha abaixo as informações da sua quarta média.")
 AVAparcial4 = float(input("Nota da AVA parcial: "))
 AVAfinal4 = float(input("Nota da AVA final: "))
 AC4 = float(input("Nota da AC: "))
 
-print("Agora as informações da sua produtividade")
+print("Agora as informações da sua produtividade.")
 
 desempenho4 = float(input("Nota do desempenho: "))
 participacao4 = float(input("Nota da participação: "))
@@ -89,14 +89,47 @@ Prod04 = Produtividade4 * 0.2
 
 M4 = (AVAp04 + AVAf04 + AC04 + Prod04)
 
-print(f"Sua quarta média é de {M4} pontos")
+print(f"Sua quarta média é de {M4} pontos.")
 
 MF1 = (M1 + M2) / 2
 if MF1 >= 7 and MF1<= 10:
     print("Só o básico também")
 elif MF1 >= 0 and MF1 <7:
-    print("Tinha que ser protótipo de henry")
+    print("Você não passou. (Tinha que ser protótipo de henry).")
+    EF1 = float(input("Escreva a nota do seu exame final do primeiro semestre: "))
+    if EF1 >= 5 and EF1 <= 10:
+        MF1 = ((M1 + M2) + EF1 * 2) / 4
+        print(f"Sua nota final do primeiro semestre foi de {MF1} pontos.")
+    elif EF1 <5 and EF1 >= 0:
+        print("Você não passou no exame.")
+    else:
+        print("Valor inserido inválido, tente novamente.")
 else:
     print("Algum(ns) valor(es) inserido(s) está(ão) inválido(s), refaça o processo desde o início.")
-    
+
+MF2 = (M3 + M4) / 2
+if MF2 >=7 and MF2 <= 10:
+    print("Só o básico também")
+elif MF2 >=0 and MF2 <7:
+    print("Você não passou. (Tinha que ser protótipo de henry).")
+    EF2 = float(input("Escreva a nota do seu exame final do segundo semestre: "))
+    if EF2 >= 5 and EF2 <+ 10:
+        MF2 = ((M1 + M2) + EF2 * 2) / 4
+        print(f"Sua nota final do segundo semestre foi de {MF2} pontos.")
+    elif EF2 <5 and EF2 >= 0:
+        print("Você não passou no exame.")
+    else:
+        print("Valor inserido inválido, tente novamente.")
+else:
+    print("Algum(ns) valor(es) inserido(s) está(ão) inválido(s), refaça o processo desde o início.")
+
+MF = (MF1 + MF2) / 2
+print(f"Sua primeira média foi de {MF1} pontos.")
+print(f"Sua segunda média foi de {MF2} pontos.")
+if MF >= 7 and MF <= 10:
+    print(f"Você passou com {MF} pontos na média anual.")
+elif MF >= 0 and MF <7:
+    print(f"Você não passou com {MF} pontos na média anual.")
+else:
+    print("Valores inseridos inválidos, tente novamente.")
 #Só deus sabe como ta a mente do palhaço KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK

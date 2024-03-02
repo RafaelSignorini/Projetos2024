@@ -1,6 +1,6 @@
 print("Escolha o bimestre para calcular a nota")
 
-bimestre = input("'1' para o primeiro, '2' para o segundo, '3' para o terceiro, '4' para o quarto, 'outro' para outras opções: ")
+bimestre = input("'1' para o primeiro, '2' para o segundo, '3' para o terceiro, '4' para o quarto: ")
 
 if bimestre == "1":
     print("Preencha abaixo as informações da sua primeira média")
@@ -98,9 +98,6 @@ elif bimestre == "4":
     M4 = (AVAp04 + AVAf04 + AC04 + Prod04)
 
     print(f"Sua quarta média é de {M4} pontos")
-
-elif bimestre == "outro":
-    print("")
 
 elif bimestre <4 and bimestre >0:
     print("Bimestre inválido, tente novamente.")

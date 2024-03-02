@@ -1,92 +1,109 @@
-print("Preencha abaixo as informações da sua primeira média")
-AVAparcial1 = float(input("Nota da AVA parcial: "))
-AVAfinal1 = float(input("Nota da AVA final: "))
-AC1 = float(input("Nota da AC: "))
+print("Escolha o bimestre para calcular a nota")
 
-print("Agora as informações da sua produtividade")
+bimestre = input("'1' para o primeiro, '2' para o segundo, '3' para o terceiro, '4' para o quarto, 'outro' para outras opções: ")
 
-desempenho1 = float(input("Nota do desempenho: "))
-participacao1 = float(input("Nota da participação: "))
-caderno1 = float(input("Nota das anotações do caderno: "))
-autoavaliacao1 = float(input("Nota da autoavaliação: "))
+if bimestre == "1":
+    print("Preencha abaixo as informações da sua primeira média")
+    AVAparcial1 = float(input("Nota da AVA parcial: "))
+    AVAfinal1 = float(input("Nota da AVA final: "))
+    AC1 = float(input("Nota da AC: "))
 
-Produtividade1 = (desempenho1 + participacao1 + caderno1 + autoavaliacao1) / 4
+    print("Agora as informações da sua produtividade")
 
-AVAp01 = AVAparcial1 * 0.25
-AVAf01 = AVAfinal1 * 0.25
-AC01 = AC1 * 0.3
-Prod01 = Produtividade1 * 0.2
+    desempenho1 = float(input("Nota do desempenho: "))
+    participacao1 = float(input("Nota da participação: "))
+    caderno1 = float(input("Nota das anotações do caderno: "))
+    autoavaliacao1 = float(input("Nota da autoavaliação: "))
+    
+    Produtividade1 = (desempenho1 + participacao1 + caderno1 + autoavaliacao1) / 4
 
-M1 = (AVAp01 + AVAf01 + AC01 + Prod01)
+    AVAp01 = AVAparcial1 * 0.25
+    AVAf01 = AVAfinal1 * 0.25
+    AC01 = AC1 * 0.3
+    Prod01 = Produtividade1 * 0.2
 
-print(f"Sua primeira média é de {M1} pontos")
-print("Preencha abaixo as informações da sua segunda média")
+    M1 = (AVAp01 + AVAf01 + AC01 + Prod01)
 
-AVAparcial2 = float(input("Nota da AVA parcial: "))
-AVAfinal2 = float(input("Nota da AVA final: "))
-AC2 = float(input("Nota da AC: "))
+    print(f"Sua primeira média é de {M1} pontos")
 
-print("Agora as informações da sua produtividade")
 
-desempenho2 = float(input("Nota do desempenho: "))
-participacao2 = float(input("Nota da participação: "))
-caderno2 = float(input("Nota das anotações do caderno: "))
-autoavaliacao2 = float(input("Nota da autoavaliação: "))
+elif bimestre == "2":
+    print("Preencha abaixo as informações da sua segunda média")
+    AVAparcial2 = float(input("Nota da AVA parcial: "))
+    AVAfinal2 = float(input("Nota da AVA final: "))
+    AC2 = float(input("Nota da AC: "))
 
-Produtividade2 = (desempenho2 + participacao2 + caderno2 + autoavaliacao2) / 4
+    print("Agora as informações da sua produtividade")
 
-AVAp02 = AVAparcial2 * 0.25
-AVAf02 = AVAfinal2 * 0.25
-AC02 = AC2 * 0.3
-Prod02 = Produtividade2 * 0.2
+    desempenho2 = float(input("Nota do desempenho: "))
+    participacao2 = float(input("Nota da participação: "))
+    caderno2 = float(input("Nota das anotações do caderno: "))
+    autoavaliacao2 = float(input("Nota da autoavaliação: "))
 
-M2 = (AVAp02 + AVAf02 + AC02 + Prod02)
+    Produtividade2 = (desempenho2 + participacao2 + caderno2 + autoavaliacao2) / 4
 
-print(f"Sua segunda média é de {M2} pontos")
-print("Preencha abaixo as informações da sua terceira média")
-AVAparcial3 = float(input("Nota da AVA parcial: "))
-AVAfinal3 = float(input("Nota da AVA final: "))
-AC3 = float(input("Nota da AC: "))
+    AVAp02 = AVAparcial2 * 0.25
+    AVAf02 = AVAfinal2 * 0.25
+    AC02 = AC2 * 0.3
+    Prod02 = Produtividade2 * 0.2
 
-print("Agora as informações da sua produtividade")
+    M2 = (AVAp02 + AVAf02 + AC02 + Prod02)
 
-desempenho3 = float(input("Nota do desempenho: "))
-participacao3 = float(input("Nota da participação: "))
-caderno3 = float(input("Nota das anotações do caderno: "))
-autoavaliacao3 = float(input("Nota da autoavaliação: "))
+    print(f"Sua segunda média é de {M2} pontos")
 
-Produtividade3 = (desempenho3 + participacao3 + caderno3 + autoavaliacao3) / 4
+elif bimestre == "3":
+    print("Preencha abaixo as informações da sua terceira média")
+    AVAparcial3 = float(input("Nota da AVA parcial: "))
+    AVAfinal3 = float(input("Nota da AVA final: "))
+    AC3 = float(input("Nota da AC: "))
 
-AVAp03 = AVAparcial3 * 0.25
-AVAf03 = AVAfinal3 * 0.25
-AC03 = AC3 * 0.3
-Prod03 = Produtividade3 * 0.2
+    print("Agora as informações da sua produtividade")
 
-M3 = (AVAp03 + AVAf03 + AC03 + Prod03)
+    desempenho3 = float(input("Nota do desempenho: "))
+    participacao3 = float(input("Nota da participação: "))
+    caderno3 = float(input("Nota das anotações do caderno: "))
+    autoavaliacao3 = float(input("Nota da autoavaliação: "))
 
-print(f"Sua terceira média é de {M3} pontos")
-print("Preencha abaixo as informações da sua quarta média")
-AVAparcial4 = float(input("Nota da AVA parcial: "))
-AVAfinal4 = float(input("Nota da AVA final: "))
-AC4 = float(input("Nota da AC: "))
+    Produtividade3 = (desempenho3 + participacao3 + caderno3 + autoavaliacao3) / 4
 
-print("Agora as informações da sua produtividade")
+    AVAp03 = AVAparcial3 * 0.25
+    AVAf03 = AVAfinal3 * 0.25
+    AC03 = AC3 * 0.3
+    Prod03 = Produtividade3 * 0.2
 
-desempenho4 = float(input("Nota do desempenho: "))
-participacao4 = float(input("Nota da participação: "))
-caderno4 = float(input("Nota das anotações do caderno: "))
-autoavaliacao4 = float(input("Nota da autoavaliação: "))
+    M3 = (AVAp03 + AVAf03 + AC03 + Prod03)
 
-Produtividade4 = (desempenho4 + participacao4 + caderno4 + autoavaliacao4) / 4
+    print(f"Sua terceira média é de {M3} pontos")
 
-AVAp04 = AVAparcial4 * 0.25
-AVAf04 = AVAfinal4 * 0.25
-AC04 = AC4 * 0.3
-Prod04 = Produtividade4 * 0.2
+elif bimestre == "4":
+    print("Preencha abaixo as informações da sua quarta média")
+    AVAparcial4 = float(input("Nota da AVA parcial: "))
+    AVAfinal4 = float(input("Nota da AVA final: "))
+    AC4 = float(input("Nota da AC: "))
 
-M4 = (AVAp04 + AVAf04 + AC04 + Prod04)
+    print("Agora as informações da sua produtividade")
 
-print(f"Sua quarta média é de {M4} pontos")
+    desempenho4 = float(input("Nota do desempenho: "))
+    participacao4 = float(input("Nota da participação: "))
+    caderno4 = float(input("Nota das anotações do caderno: "))
+    autoavaliacao4 = float(input("Nota da autoavaliação: "))
+
+    Produtividade4 = (desempenho4 + participacao4 + caderno4 + autoavaliacao4) / 4
+
+    AVAp04 = AVAparcial4 * 0.25
+    AVAf04 = AVAfinal4 * 0.25
+    AC04 = AC4 * 0.3
+    Prod04 = Produtividade4 * 0.2
+
+    M4 = (AVAp04 + AVAf04 + AC04 + Prod04)
+
+    print(f"Sua quarta média é de {M4} pontos")
+
+elif bimestre == "outro":
+    print("")
+
+elif bimestre <4 and bimestre >0:
+    print("Bimestre inválido, tente novamente.")
 
 if (M1 + M2) >= 14:
     MF1 = ((M1 + M2) * 2) / 3

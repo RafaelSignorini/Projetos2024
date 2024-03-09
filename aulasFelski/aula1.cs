@@ -1,5 +1,3 @@
-// Este arquivo serve de notas para os projetos de Game Design do ensino médio da univali
-
 using System;
 
 public class HelloWorld

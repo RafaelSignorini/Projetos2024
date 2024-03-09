@@ -1,38 +1,28 @@
+using Godot;
 using System;
 
-public class HelloWorld
+public partial class Sprite2D : Godot.Sprite2D
 {
-    public static void Main(string[] args)
-    {
-        Console.WriteLine ("Preencha abaixo as informações da sua primeira média");
-        float AVAparcial1, AVAfinal1, AC1, desempenho1, participacao1, caderno1, autoavaliacao1, produtividade1, AVAp01, AVAf01, AC01, Prod01, M1;
-        Console.WriteLine ("Nota da AVA parcial: ");
-        AVAparcial1 = float.Parse(Console.ReadLine());
-        Console.WriteLine ("Nota da AVA final: ");
-        AVAfinal1 = float.Parse(Console.ReadLine());
-        Console.WriteLine ("Nota da AC: ");
-        AC1 = float.Parse(Console.ReadLine());
-        
-        Console.WriteLine("Agora as informações da sua produtividade: ");
-        
-        Console.WriteLine("Nota do desempenho: ");
-        desempenho1 = float.Parse(Console.ReadLine());
-        Console.WriteLine("Nota da participação: ");
-        participacao1 = float.Parse(Console.ReadLine());
-        Console.WriteLine("Nota do caderno: ");
-        caderno1 = float.Parse(Console.ReadLine());
-        Console.WriteLine("Autoavaliação: ");
-        autoavaliacao1 = float.Parse(Console.ReadLine());
-        
-        produtividade1 = (desempenho1 * 0.25f) + (participacao1 * 0.25f) + (caderno1 * 0.25f) + (autoavaliacao1 * 0.25f);
-        
-        AVAp01 = AVAparcial1 * 0.25f;
-        AVAf01 = AVAfinal1 * 0.25f;
-        AC01 = AC1 * 0.3f;
-        Prod01 = produtividade1 * 0.2f;
-        
-        M1 = AVAp01 + AVAf01 + AC01 + Prod01;
+	// Called when the node enters the scene tree for the first time.
+	public override void _Ready()
+	{
+		GlobalPosition = new Vector2(100, 100);
+	}
 
-        Console.WriteLine("Sua média é: " + M1);
-    }
+	// Called every frame. 'delta' is the elapsed time since the previous frame.
+	public override void _Process(double delta)
+	{
+		if (Input.IsActionPressed("direita") && GlobalPosition.X < 1024) {
+			GlobalPosition = GlobalPosition + new Vector2(1,0);
+		}
+		if (Input.IsActionPressed("esquerda") && GlobalPosition.X > 64) {
+			GlobalPosition = GlobalPosition + new Vector2(-1,0);
+		}
+		if (Input.IsActionPressed("cima") && GlobalPosition.Y > 64) {
+			GlobalPosition = GlobalPosition + new Vector2(0,-1);
+		}
+		if (Input.IsActionPressed("baixo") && GlobalPosition.Y < 512) {
+			GlobalPosition = GlobalPosition + new Vector2(0,1);
+		}
+	}
 }

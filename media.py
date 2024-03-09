@@ -14,12 +14,7 @@ autoavaliacao1 = float(input("Nota da autoavaliação: "))
 
 Produtividade1 = (desempenho1 + participacao1 + caderno1 + autoavaliacao1) / 4
 
-AVAp01 = AVAparcial1 * 0.25
-AVAf01 = AVAfinal1 * 0.25
-AC01 = AC1 * 0.3
-Prod01 = Produtividade1 * 0.2
-
-M1 = (AVAp01 + AVAf01 + AC01 + Prod01)
+M1 = ({AVAparcial1 * 0.25}, {AVAfinal1 * 0.25}, {AC1 * 0.3}, {Produtividade1 * 0.2}) / 4
 
 print(f"Sua primeira média é de {M1} pontos.")
 
@@ -36,12 +31,7 @@ autoavaliacao2 = float(input("Nota da autoavaliação: "))
 
 Produtividade2 = (desempenho2 + participacao2 + caderno2 + autoavaliacao2) / 4
 
-AVAp02 = AVAparcial2 * 0.25
-AVAf02 = AVAfinal2 * 0.25
-AC02 = AC2 * 0.3
-Prod02 = Produtividade2 * 0.2
-
-M2 = (AVAp02 + AVAf02 + AC02 + Prod02)
+M2 = ({AVAparcial2 * 0.25}, {AVAfinal2 * 0.25}, {AC2 * 0.3}, {Produtividade2 * 0.2}) / 4
 
 print(f"Sua segunda média é de {M2} pontos.")
 
@@ -59,12 +49,7 @@ autoavaliacao3 = float(input("Nota da autoavaliação: "))
 
 Produtividade3 = (desempenho3 + participacao3 + caderno3 + autoavaliacao3) / 4
 
-AVAp03 = AVAparcial3 * 0.25
-AVAf03 = AVAfinal3 * 0.25
-AC03 = AC3 * 0.3
-Prod03 = Produtividade3 * 0.2
-
-M3 = (AVAp03 + AVAf03 + AC03 + Prod03)
+M3 = ({AVAparcial3 * 0.25}, {AVAfinal3 * 0.25}, {AC3 * 0.3}, {Produtividade3 * 0.2}) / 4
 
 print(f"Sua terceira média é de {M3} pontos.")
 
@@ -82,12 +67,7 @@ autoavaliacao4 = float(input("Nota da autoavaliação: "))
 
 Produtividade4 = (desempenho4 + participacao4 + caderno4 + autoavaliacao4) / 4
 
-AVAp04 = AVAparcial4 * 0.25
-AVAf04 = AVAfinal4 * 0.25
-AC04 = AC4 * 0.3
-Prod04 = Produtividade4 * 0.2
-
-M4 = (AVAp04 + AVAf04 + AC04 + Prod04)
+M4 = ({AVAparcial4 * 0.25}, {AVAfinal4 * 0.25}, {AC4 * 0.3}, {Produtividade4 * 0.2}) / 4
 
 print(f"Sua quarta média é de {M4} pontos.")
 

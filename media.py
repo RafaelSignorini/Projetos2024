@@ -14,9 +14,14 @@ autoavaliacao1 = float(input("Nota da autoavaliação: "))
 
 Produtividade1 = (desempenho1 + participacao1 + caderno1 + autoavaliacao1) / 4
 
-M1 = ({AVAparcial1 * 0.25}, {AVAfinal1 * 0.25}, {AC1 * 0.3}, {Produtividade1 * 0.2}) / 4
-
-print(f"Sua primeira média é de {M1} pontos.")
+if AVAparcial1 > AVAfinal1:
+    M1 = ((AVAparcial1 * 0.25) + (AVAfinal1 * 0.25) + (AC1 * 0.3) + (Produtividade1 * 0.2)) / 4
+    print(f"Sua primeira média é de {M1} pontos.")
+elif AVAparcial1 <= AVAfinal1:
+    M1 = ((AVAfinal1 * 0.5) + (AC1 * 0.3) + (Produtividade1 * 0.2)) / 3
+    print(f"Sua primeria média é de {M1} pontos.")
+else:
+    print("Erro, tente novamente")
 
 print("Preencha abaixo as informações da sua segunda média.")
 AVAparcial2 = float(input("Nota da AVA parcial: "))

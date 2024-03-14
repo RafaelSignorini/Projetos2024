@@ -36,7 +36,7 @@ autoavaliacao2 = float(input("Nota da autoavaliação: "))
 
 Produtividade2 = (desempenho2 + participacao2 + caderno2 + autoavaliacao2) / 4
 
-M2 = ({AVAparcial2 * 0.25}, {AVAfinal2 * 0.25}, {AC2 * 0.3}, {Produtividade2 * 0.2}) / 4
+M2 = ((AVAparcial2 * 0.25) + (AVAfinal2 * 0.25) + (AC2 * 0.3) + (Produtividade2 * 0.2)) / 4
 
 print(f"Sua segunda média é de {M2} pontos.")
 

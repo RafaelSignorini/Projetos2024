@@ -1,3 +1,9 @@
+# Este código não funciona, eu desisto, ele só vai ficar aqui caso eu entenda o que eu fiz de errado
+# Adicione quantas horas foram gastas neste código para que o próximo programador saiba com o que
+# estará lidando. Nem Deus sabe o que tá escrito nesse código nengue.
+
+# Horas perdidas no código: 3h
+
 print("Preencha abaixo as informações da sua primeira média.")
 AVAparcial1 = float(input("Nota da AVA parcial: "))
 AVAfinal1 = float(input("Nota da AVA final: "))

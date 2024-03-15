@@ -1,5 +1,3 @@
-print("Escolha o bimestre para calcular a nota.")
-
 print("Preencha abaixo as informações da sua primeira média.")
 AVAparcial1 = float(input("Nota da AVA parcial: "))
 AVAfinal1 = float(input("Nota da AVA final: "))
@@ -117,4 +115,5 @@ elif MF >= 0 and MF <7:
     print(f"Você não passou com {MF} pontos na média anual.")
 else:
     print("Valores inseridos inválidos, tente novamente.")
-#Só deus sabe como ta a mente do palhaço KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+
+# Só deus sabe como ta a mente do palhaço KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK

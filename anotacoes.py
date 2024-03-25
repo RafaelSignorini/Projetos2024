@@ -1,5 +1,4 @@
 # Código do Gustax0
-
 def calcular_media(bimestre):
 
   notas = []

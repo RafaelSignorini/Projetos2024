@@ -10,3 +10,5 @@ q1_q2 = F * d ** 2 / k
 
 # Impressão do resultado
 print('q1 * q2 = {} C^2'.format(q1_q2))
+
+# Supostamente o resultado era pra dar 6e-15 C^2

@@ -1,9 +1,7 @@
 using System;
 
-public class HelloWorld
-{
-    public static void Main(string[] args)
-    {
+public class HelloWorld {
+    public static void Main(string[] args) {
         Console.WriteLine ("Preencha abaixo as informações da sua primeira média");
         float AVAparcial1, AVAfinal1, AC1, desempenho1, participacao1, caderno1, autoavaliacao1, produtividade1, AVAp01, AVAf01, AC01, Prod01, M1;
         Console.WriteLine ("Nota da AVA parcial: ");

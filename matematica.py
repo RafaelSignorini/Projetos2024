@@ -10,6 +10,6 @@ def taxaMensalComposto():
     C = float(input("Digite o valor do capital: \n"))
     t = float(input("Digite o tempo em que será investido o dinheiro: \n"))
     M = float(input("Digite o valor montante após o investimento: \n"))
-    return "A taxa de juros aplicada ao capital de {} reais por {} meses com um montante de {} reais, foi {}%".format(C, t, M, )
+    return "A taxa de juros aplicada ao capital de {} reais por {} meses com um montante de {} reais, foi {}%".format(C, t, M, M / C **(1/t))
 
-print(taxaMensalComposto())
+print(1.5 ** (1/3))
